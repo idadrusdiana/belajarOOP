@@ -20,7 +20,7 @@ class Cat extends Animal
 
     public function eat(AnimalFood $animalFood): void
     {
-        echo "Cat is eating";
+        echo "Cat is eating" . PHP_EOL;
     }
 }
 
@@ -31,8 +31,8 @@ class Dog extends Animal
         echo "Dog $this->name is running" . PHP_EOL;
     }
 
-    public function eat(Food $animalFood):void  //ini yang diaksud dengan Contravaiance (child yang jadi parent)
+    public function eat(Food $animalFood): void  //ini yang diaksud dengan Contravaiance (child yang jadi parent)
     {
-        echo "Dog is eating" . PHP_EOL;
+        echo "Dog is eating".PHP_EOL;
     }
 }
